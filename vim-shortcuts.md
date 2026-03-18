@@ -120,6 +120,22 @@
 | `@@` | Replay last macro |
 | `{n}@{a-z}` | Play macro n times |
 
+## Visual Block (Rectangular) Editing
+
+Enter with `Ctrl+v`, select with `h/j/k/l`, then:
+
+| Key | Action |
+|-----|--------|
+| `I` | Insert before block on all lines (apply with `Esc`) |
+| `A` | Append after block on all lines (apply with `Esc`) |
+| `d` / `x` | Delete block |
+| `c` | Change block |
+| `r{c}` | Replace all chars in block with c |
+| `~` | Toggle case of block |
+| `>` / `<` | Indent / dedent block |
+
+> **Note:** When using `I` or `A`, the change appears only on the first line while typing — pressing `Esc` applies it to all selected lines.
+
 ## Text Objects (use with `d`, `c`, `y`, `v`)
 
 | Key | Action |
